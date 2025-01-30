@@ -1,3 +1,4 @@
+/* General styles */
 html {
     font-family: Roboto, sans-serif;
     box-sizing: border-box;
@@ -12,21 +13,13 @@ body {
     margin: 0;
 }
 
+.container, .images-flex {
+    width: 80vw;
+    margin: auto;
+}
+
 header, footer {
     background-color: #1f2937;
-    display: flex;
-    align-items: center;
-}
-
-header {
-    justify-content: space-between;
-    padding: 25px;
-}
-
-.hero h1 {
-    font-size: 48px;
-    color: #f9faf8;
-    font-weight: 900;
 }
 
 .hero p, header a {
@@ -34,12 +27,8 @@ header {
     color: #e5e7eb;
 }
 
-header span {
-    font-size: 24px;
-    color: #f9faf8;
-}
 
-button, .signup-container {
+button, .signup-section .container {
     background-color: #3882f6;
 
 }
@@ -65,4 +54,34 @@ button, .signup-container {
     display: block;
     text-align: right;
     font-weight: bold;
+}
+
+/* Layout styles */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+header .container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .container ul  li {
+    padding: 5px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+header span {
+    font-size: 24px;
+    color: #f9faf8;
 }
