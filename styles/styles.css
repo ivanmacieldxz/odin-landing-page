@@ -8,6 +8,10 @@ html {
     box-sizing: inherit;
 }
 
+h1, h2, h3 {
+    margin: 0;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -54,14 +58,22 @@ button, .signup-section .container {
     display: block;
     text-align: right;
     font-weight: bold;
+    font-style: normal;
 }
+
+.hero h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
 
 /* Layout styles */
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 header .container ul {
@@ -75,13 +87,118 @@ header .container ul  li {
     padding: 5px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    color: #f9faf8;
-    font-weight: 900;
-}
-
 header span {
     font-size: 24px;
     color: #f9faf8;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #1f2937;
+    padding: 50px 0;
+    height: auto;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero .text-container {
+    flex: 1;
+}
+
+.hero .img-container {
+    flex: 1;
+    min-height: 240px;
+    background-color: #f9faf84e;
+    display: flex;
+}
+
+.hero .img-container span {
+    margin: auto;
+    color: #f9faf8;
+}
+
+.hero h1 {
+    line-height: 100%;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #f9faf8;
+    font-weight: bold;
+}
+
+.random-info h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.random-info {
+    padding: 50px 0;
+}
+
+.images-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 50px;
+}
+
+.image-info-container {
+    width: 140px;
+}
+
+.image-info-container div {
+    width: 100%;
+    height: 140px;
+    border: 3px solid #3882f6;
+    border-radius: 5px;
+}
+
+.image-info-container p {
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.phrase-section {
+    background-color: #e5e7eb;
+}
+
+.phrase-section .container {
+    width: 50%;
+    padding: 30px;
+}
+
+.signup-section {
+    padding: 75px;
+}
+
+.signup-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    border-radius: 10px;
+    color: #f9faf8;
+}
+
+.signup-section p {
+    margin: 0;
+    color: #e5e7eb;
+}
+
+.signup-section button {
+    border: 2px solid #f9faf8;
+    padding: 7px 30px;
+}
+
+footer {
+    text-align: center;
+    color: #f9faf8;
+    padding: 30px;
 }
